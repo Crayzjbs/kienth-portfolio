@@ -16,19 +16,8 @@ export default function Home() {
                 Davao City, Philippines
               </p>
               <p className="text-2xl font-semibold text-gray-800 mb-6">
-                UI/UX Designer | Frontend Developer | Web Developer
+                UI/UX Designer | Frontend Developer | Web Developer | Motion Graphics Artist
               </p>
-
-              {/* Badge */}
-              <div className="mb-6">
-                <a 
-                  href="#" 
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium hover:bg-blue-200 transition-colors"
-                >
-                  🏆 Achievements
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 mb-8">
@@ -117,6 +106,35 @@ export default function Home() {
               I am a creative person with plenty of experience in Video Editing and Motion Graphics works as a freelancer. 
               When not writing code, I focus on creating engaging visual content and bringing ideas to life through video and animation.
             </p>
+            <div className="flex flex-wrap gap-4 mb-6">
+              <a 
+                href="https://drive.google.com/file/d/1sWFwc3V0_tbi7cQ3zdjuRsfEbcEVeYrh/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md border border-white/30 text-gray-900 rounded-xl hover:bg-white/30 transition-all font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                <ExternalLink className="w-5 h-5" />
+                Showreel
+              </a>
+              <a 
+                href="https://drive.google.com/drive/folders/1-AfwnQDmskQO92001FVYumy0M3D_TeiC?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md border border-white/30 text-gray-900 rounded-xl hover:bg-white/30 transition-all font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                <ExternalLink className="w-5 h-5" />
+                Long forms
+              </a>
+              <a 
+                href="https://drive.google.com/drive/folders/1-AfwnQDmskQO92001FVYumy0M3D_TeiC?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md border border-white/30 text-gray-900 rounded-xl hover:bg-white/30 transition-all font-medium shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              >
+                <ExternalLink className="w-5 h-5" />
+                Short forms
+              </a>
+            </div>
             
             {/* Creative Tools */}
             <div className="mt-6">
@@ -156,12 +174,11 @@ export default function Home() {
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: 'IslandBoi Beach Resort', desc: 'Frontend Developer - Developed the user interface and interactive features', url: 'https://resort-preng.vercel.app/' },
-              { name: 'Kenko Website', desc: 'Fullstack Developer - This is a family business website passed down to me', url: 'https://kenko-website-m249.vercel.app/' },
-              { name: 'PetPal', desc: 'Frontend Designer - Frontend design using Vite for our pet blood matching app', url: 'https://pet-pal-frontend-eight.vercel.app/' },
-              { name: 'Project Four', desc: 'Description of your fourth project', url: '#' },
+              { name: 'IslandBoi Beach Resort', desc: 'Frontend Developer - Developed the user interface and interactive features', url: 'https://resort-preng.vercel.app/', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+              { name: 'Kenko Website', desc: 'Fullstack Developer - This is a family business website passed down to me', url: 'https://kenko-website-m249.vercel.app/', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+              { name: 'PetPal', desc: 'Frontend Designer - Frontend design using Vite for our pet blood matching app', url: 'https://pet-pal-frontend-eight.vercel.app/', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
             ].map((project) => (
               <a 
                 key={project.name}
@@ -171,7 +188,17 @@ export default function Home() {
                 className="group bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all hover:-translate-y-1"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl"></div>
+                  {project.icon ? (
+                    <div className="w-16 h-16 bg-white rounded-xl flex items-center justify-center p-3 shadow-md">
+                      <img 
+                        src={project.icon} 
+                        alt={`${project.name} icon`}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl"></div>
+                  )}
                   <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-blue-600 transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900">{project.name}</h3>
@@ -229,7 +256,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="text-center py-8 border-t border-gray-200" data-section="footer">
           <p className="text-gray-600">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Kienth Justine Javines. All rights reserved.
           </p>
         </footer>
       </div>
