@@ -70,18 +70,8 @@ export default function Home() {
         <section className="mb-16" data-section="about">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">About</h2>
           <div className="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">
-            <p className="text-gray-700 leading-relaxed mb-4">
-              I&apos;m a full-stack software engineer specializing in developing solutions with [Your Tech Stack]. 
-              I work on projects including building modern web applications, mobile apps, and creating innovative solutions.
-            </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              I&apos;ve helped startups and businesses grow and streamline their processes through software solutions. 
-              I&apos;m passionate about sharing knowledge and mentorship within the developer community.
-            </p>
             <p className="text-gray-700 leading-relaxed">
-              Lately, I&apos;ve been diving deeper into [Your Current Focus], focusing on integrating modern tools 
-              and techniques into applications. My work includes developing innovative solutions and leveraging 
-              cutting-edge technology to deliver exceptional results.
+              Hi, I&apos;m Justine Javines, a 4th-year Computer Science student with a strong interest in UI/UX design, frontend development, and web development. I&apos;m passionate about creating intuitive, user-centered digital experiences and continuously growing my skills in modern web technologies.
             </p>
           </div>
         </section>
