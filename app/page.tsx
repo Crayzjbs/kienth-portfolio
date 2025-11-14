@@ -60,7 +60,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6 text-gray-900">About</h2>
           <div className="bg-gray-50 rounded-2xl p-8 shadow-lg border border-gray-200">
             <p className="text-gray-700 leading-relaxed">
-              Hi, I&apos;m Justine Javines, a 4th-year Computer Science student with a strong interest in UI/UX design, frontend development, and web development. I&apos;m passionate about creating intuitive, user-centered digital experiences and continuously growing my skills in modern web technologies.
+              Hi, I&apos;m Justine Javines, a 4th-year Computer Science student with a strong interest in UI/UX design, frontend development, and web development. I&apos;m passionate about creating intuitive, user-centered digital experiences and continuously growing my skills in modern web technologies. 
+              Right now, I am learning AI Automation and machine learning and using them to improve my workflow.
             </p>
           </div>
         </section>
@@ -80,6 +81,8 @@ export default function Home() {
               { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', color: 'from-yellow-400 to-yellow-500' },
               { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg', color: 'from-blue-500 to-blue-600' },
               { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', color: 'from-cyan-400 to-blue-500' },
+              { name: 'Next.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', color: 'from-gray-700 to-gray-900' },
+              { name: 'Vite', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg', color: 'from-purple-500 to-yellow-400' },
             ].map((tech) => (
               <div 
                 key={tech.name}
